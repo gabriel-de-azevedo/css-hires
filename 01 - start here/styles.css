@@ -25,6 +25,80 @@
   --border-radius: 0.75rem;
 }
 
+body {
+  font-family: var(--ff-base);
+}
+
+.candidate .name {
+  font-family: var(--ff-accent);
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: var(--clr-base-500);
+}
+
+.candidate img {
+  margin: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.candidate .roles {
+  margin-top: 0;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: var(--fw-700);
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  border-radius: 2em;
+}
+
+.tag--ui {
+  background: var(--clr-ui-300);
+  color: var(--clr-ui-400);
+}
+
+.tag--ux {
+  background: var(--clr-ux-300);
+  color: var(--clr-ux-400);
+}
+
+.tag--dev {
+  background: var(--clr-dev-300);
+  color: var(--clr-dev-400);
+}
+
+.candidate .bio {
+  margin: 0;
+  line-height: 1.75em;
+  padding-right: 2em;
+  color: var(--clr-base-400);
+}
+
+.candidate .social {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.btn {
+  background: var(--clr-accent-400);
+  color: white;
+  text-decoration: none;
+  font-weight: var(--fw-700);
+  padding: 0.7em 2.7em;
+  border-radius: var(--border-radius);
+  text-transform: uppercase;
+}
+
+.candidate .btn {
+  justify-self: end;
+  margin: 1em;
+  margin-top: 0;
+}
+
 /* /////////////////
    Layout related
    no need to touch any of this
@@ -48,7 +122,6 @@
     "role role"
     "bio bio"
     "button button";
-  gap: 0.5em;
   box-shadow: var(--shadow);
   border-radius: var(--border-radius);
 }
